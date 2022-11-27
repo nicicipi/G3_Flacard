@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono&display=swap');
 
 
-body{
+body, .search-bar-submit{
     font-family: 'Inconsolata';
     margin: 0;
     padding: 0;
@@ -33,6 +33,7 @@ nav{
 
 .search-bar-submit{
     display: flex;
+    width: 400px;
 }
 
 .search-bar{
@@ -44,8 +45,8 @@ nav{
     border-bottom-width: 1px;
     border-top-width: 1px;
     border-left-width: 1px;
-    width: 300px;
     padding: 13px;
+    width: 100%;
     padding-left: 20px;
     vertical-align: top;
 }
@@ -62,15 +63,23 @@ nav{
     padding: 10px;
 }
 
+.home-menu, .create-menu{
+    text-decoration: none;
+}
+
+.width-find{
+    display: block;
+    width: 400px;
+}
+
 .find-bar{
     font-size: 18px;
     border-style: solid;
     border-radius: 6px;
     border-color: rgb(177, 177, 177);
-    width: 400px;
+    width: 100%;
     padding: 5px;
     padding-left: 14px;
-    display: block;
 }
 
 .card{
@@ -148,6 +157,8 @@ ul{
 
 ul li{
     list-style: none;
+    line-height: 100px;
+    float: left;
 }
 
 ul li a{
@@ -156,6 +167,11 @@ ul li a{
     font-size: 1.1em;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.7s;
+}
+
+ul li a:hover{
+    color:rgb(189, 189, 189);
 }
 
 .brand{
@@ -178,6 +194,10 @@ section h1{
     font-family: 'Spline Sans Mono';
     font-weight: bold;
     transition: text-decoration 1s;
+}
+
+.home-create {
+    display: flex;
 }
 
 section h1:hover{
